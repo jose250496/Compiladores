@@ -1,0 +1,21 @@
+El proyecto que se presenta fue realizado por:
+Escobedo De La Vega Carlos Vidal
+Espinoza Osorio Jose Luis
+
+Notas: Como no sabiamos si al final se iba a realizar proyecto o algo, estuvimos trabajando
+en un pequeño, por la dificultad decidimos trabajar en equipo para sacar algo que presentar.
+
+El programa es un compilador en donde se realiza algunas cosas como suma, restas, comparacion, modulo.
+En caso de que compilador no reconozca lo que se desea se pone syntax error, ya que si detecta
+si es un numero, operador, simbolo o palabra reservada, pero en caso de que se escriba mal lo que
+sale es ese mensaje.
+
+Para poder correr el programa
+instalar previo
+apt-get install bison
+apt-get intall flex
+
+bison -yd proyecto.y
+flex proyecto.l
+gcc lex.yy.x y.tab.c -lm -w
+./a.out
